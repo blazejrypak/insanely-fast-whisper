@@ -1,12 +1,12 @@
 name: Push to Replicate
- 
+
 on:
   workflow_dispatch:
     inputs:
       model_name:
         description: 'Enter the model name, like "alice/bunny-detector"'
         required: true
- 
+
 jobs:
   push_to_replicate:
     name: Push to Replicate
@@ -17,10 +17,10 @@ jobs:
         with:
           tool-cache: false
           docker-images: false
- 
+
       - name: Checkout
         uses: actions/checkout@v4
- 
+
       - name: Setup Cog
         uses: replicate/setup-cog@v2
         with:

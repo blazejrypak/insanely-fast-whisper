@@ -21,6 +21,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Debug - Show Files
+        run: ls -la /home/runner/work/insanely-fast-whisper/insanely-fast-whisper
+
+
       - name: Setup Cog
         uses: replicate/setup-cog@v2
         with:

@@ -3,7 +3,7 @@ name: Push to Replicate
 on:
   workflow_dispatch:
     inputs:
-      model_name: insanely-fast-whisper
+      model_name:
         description: 'Enter the model name, like "alice/bunny-detector"'
         required: true
  
